@@ -1,2 +1,5 @@
 node_modules
 /slides/talk
+/app-for-distribution
+/slides/node_modules
+/videostreaming/node_modules
