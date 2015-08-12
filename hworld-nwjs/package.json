@@ -1,0 +1,11 @@
+{
+  "name"    : "Ej1-hworld-nwjs",
+  "version" : "0.1.0",
+  "main": "index.html",
+  "window": {
+   "title": "hworld nwjs",
+   "toolbar": true,
+   "min_width": 960,
+   "min_height": 520
+ }
+}

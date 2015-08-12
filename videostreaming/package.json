@@ -1,0 +1,9 @@
+{
+  "name": "Ej3-videostreaming",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "babel-core": "^5.7.4",
+    "peerflix": "^0.30.1"
+  }
+}

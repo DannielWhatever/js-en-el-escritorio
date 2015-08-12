@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo video streaming</title>
+  </head>
+  <body>
+      <video id="video_player_html5" width="640" height="480" controls>
+      </video>
+
+      <script>
+      //god forgive me
+      require('ipc').on('streaming:ready', function(urlStreaming) {
+        debugger;
+        var sourceVideo = window.document.createElement('source');
+        sourceVideo.setAttribute('src', urlStreaming);
+        var video = window.document.getElementById('video_player_html5');
+        video.appendChild(sourceVideo);
+        video.play();
+
+      });
+      </script>
+  </body>
+</html>

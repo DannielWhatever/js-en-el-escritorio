@@ -1,0 +1,134 @@
+//My slides :B
+
+section
+  h1 JS
+  h3 También en el escritorio
+  p
+    small
+      a(href='http://twitter.com/dannielwhatever') @dannielwhatever
+
+  aside.notes
+    | Hello friend. Compañias que gobiernan el mundo. Github.
+
+
+
+section
+  img(src='img/electron.png', alt='')
+  a(href='http://electron.atom.io/') http://electron.atom.io/
+
+  aside.notes
+    | Ver Atom. Super cool, memoria ram y tecnologías web. Framework para hacer aplicaciones js de escritorio.
+  
+
+
+section
+  h2 Y que hay de nuevo?
+  br
+  img(width='280', height='270', data-src='img/nwjs.png')
+  img(width='280', height='270', data-src='img/brackets.png')
+  .fragment
+    p Un enfoque diferente.
+    br
+    a(href='http://electron.atom.io/docs/v0.30.0/development/atom-shell-vs-node-webkit/') http://electron.atom.io/docs/v0.30.0/development/atom-shell-vs-node-webkit/
+
+  aside.notes
+    | Cumplen el mismo fin, pero de maneras diferentes.
+  
+
+section
+  img(width='800', height='600', data-src='img/nw13arch.png')
+  
+  aside.notes
+    | Arquitectura similar de Nw.js y Electron. Io.js, Chromium y API.
+  
+
+section
+  h2 Primeros Pasos
+  br
+  span Instala Electron
+  pre
+    code npm -g i electron-prebuilt
+  .fragment
+    br
+    span Corre tu aplicación
+    pre
+      code electron [directorio-app]
+  aside.notes
+    | Como empezar con electron.
+
+    
+section
+  h2 Estructura de una aplicación y la principal diferencia con Nw.js
+  em.fragment Ver directorio hworld y hworld-nwjs
+  
+  aside.notes
+    | Priemro un ejemplo en Nw, y luego entramos al fin a Electron.
+
+  
+  
+section
+  h2 Componentes Nativos
+  //img(width='800', height='600', data-src='img/captura Atom.png')
+  em.fragment Ver directorio electroncomponents
+  
+  aside.notes
+    | No hay imágen, muestra Atom. Componentes similares entre Linux, Mac y Windows.
+
+  
+  
+section
+  img(width='700', height='450', data-src='img/atom-shell-arch.png')
+  aside.notes
+    | Más de arquitectura, qué es Main, renderes y como se comunican.
+
+  
+section
+  img(data-src='img/main y renderer.png')
+  aside.notes
+    | IPC
+
+  
+section
+  h2 Comunicando Main y Renderer
+  em.fragment Ver directorio videostreaming
+  aside.notes
+    | Vamos a ver un ejemplo de IPC.
+
+
+  
+section
+  h2 Distribuye
+  ul
+    li Copia tu aplicación dentro del directorio resources de Electron.
+    li Renombra la carpeta de tu aplicación por 'app'
+    li Ejecuta Electron
+  .fragment
+    h2 ..y empaqueta
+    pre
+      code npm -g i asar
+    pre
+      code asar pack [directory] app.asar
+    p
+      | Ahora solo resta incluir tu archivo app.asar en la carpeta resources de electron ;)
+  aside.notes
+    | Como distribuir tu aplicación para que otros la ocupen. Y comprimida. Electron-packager.
+
+
+      
+section
+  h2 Ocupalo como tu quieras
+  img(data-src='img/js-frameworks.jpg')
+  aside.notes
+    | Podemos ocupar los frameworks que usamos en nuestras webapps, todo lo que nos gusta de node, preprocesadores css, etc.
+
+
+  
+section(style='text-align: left;')
+  h1 FIN
+  em Encuentra las diapositivas en Github!
+  br
+  a(href='http://github.com/DannielWhatever/js-en-el-escritorio') github.com/DannielWhatever/js-en-el-escritorio
+  aside.notes
+    | Gracias por todo. Soy un noob en esto, me gusto y quise compartirlo con ustedes. Blessings.
+    
+    

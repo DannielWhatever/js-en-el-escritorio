@@ -1,0 +1,10 @@
+{
+  "name": "js-en-el-escritorio",
+  "version": "1.0.0",
+  "description": "introducción a aplicaciones js en el escritorio, usando Electron",
+  "scripts": {
+    "start": "grunt --base ./slides --gruntfile ./slides/Gruntfile.js serve"
+  },
+  "author": "dannielwhatever",
+  "license": "MIT"
+}
